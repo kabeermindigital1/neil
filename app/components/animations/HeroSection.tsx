@@ -7,7 +7,12 @@ const HeroSection = () => {
                 <h1>Welcome to our store</h1>
             </div>
             <div>
-                <Image src="/images/hero-section.png" alt="hero-section" />
+                <Image
+                    src="/images/hero-section.png"
+                    alt="hero-section"
+                    width={500}
+                    height={300}
+                />
             </div>
         </main>
     );
