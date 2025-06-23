@@ -128,7 +128,7 @@ export const ThirdSection = () => {
         </div>
       </section>
 
-      <section className="w-full h-screen flex justify-center items-center bg-black"></section>
+      {/* <section className="w-full h-screen flex justify-center items-center bg-black"></section> */}
     </div>
   );
 };
