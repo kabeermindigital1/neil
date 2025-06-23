@@ -65,7 +65,7 @@ export const ThirdSection = () => {
 
   return (
     <div ref={sectionRef}>
-      <section className="w-full h-screen flex justify-center items-center bg-black"></section>
+      {/* <section className="w-full h-screen flex justify-center items-center bg-black"></section> */}
 
       <section className="w-full h-screen border-y-2 border-dashed border-gray-400 pin-section">
         <div className="w-full max-w-6xl h-[20%] mx-auto flex justify-center items-center">
@@ -128,7 +128,7 @@ export const ThirdSection = () => {
         </div>
       </section>
 
-      <section className="w-full h-screen flex justify-center items-center bg-black"></section>
+      {/* <section className="w-full h-screen flex justify-center items-center bg-black"></section> */}
     </div>
   );
 };

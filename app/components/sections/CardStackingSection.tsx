@@ -91,7 +91,7 @@ export const CardStackingSection = () => {
         </div>
       </section>
 
-      <section className="h-[1000px]"></section>
+      {/* <section className="h-[1000px]"></section> */}
     </>
   );
 };
