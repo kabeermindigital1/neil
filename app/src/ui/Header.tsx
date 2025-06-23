@@ -27,10 +27,10 @@ const Header = () => {
                 priority
             />
             <div className="flex items-center gap-2">
-                <button className="bg-[#08457E] hover:bg-transparent hover:text-[#08457E] hover:border-[#08457E] border-[1px] border-transparent text-white px-4 py-2 rounded-md">
+                <button className="hover:bg-[#08457E] bg-transparent text-[#08457E] border-[#08457E] border-[1px] hover:border-transparent hover:text-white px-8 py-2 rounded-md">
                     Login
                 </button>
-                <button className="bg-[#08457E] hover:bg-transparent hover:text-[#08457E] hover:border-[#08457E] border-[1px] border-transparent text-white px-4 py-2 rounded-md">
+                <button className="bg-[#08457E] hover:bg-transparent hover:text-[#08457E] hover:border-[#08457E] border-[1px] border-transparent text-white px-8 py-2 rounded-md">
                     Signup
                 </button>
             </div>
