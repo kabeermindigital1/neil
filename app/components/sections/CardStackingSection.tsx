@@ -10,7 +10,7 @@ const cardData = [
   {
     heading: "Encrypted by design",
     description: "All data encrypted in transit and at rest",
-    image: "./assets/images/privacy1.png", // replace with actual image
+    image: "./assets/images/privacy1.png",
   },
   {
     heading: "Never sold or shared",
@@ -20,7 +20,7 @@ const cardData = [
   {
     heading: "You control your data",
     description: "Delete, modify, or export anytime",
-    image: "./assets/images/privacy3.png", // replace with actual image
+    image: "./assets/images/privacy3.png",
   },
 ];
 
@@ -58,40 +58,35 @@ export const CardStackingSection = () => {
   }, []);
 
   return (
-    <>
-      <section className="py-16 overflow-hidden bg-white">
-        <div className="max-w-5xl mx-auto space-y-8 relative">
-          {cardData.map((card, i) => (
-            <div
-              key={i}
-              ref={(el) => {
-                if (el) cardsRef.current[i] = el;
-              }}
-              className="stackCard bg-opacity-90 rounded-3xl min-h-[450px] px-8 py-12 bg-white flex items-center justify-between gap-8"
-              style={{
-                backgroundColor: ["#f3f3f5", "#f3f3f5", "#f3f3f5"][i],
-              }}
-            >
-              {/* Left: Text */}
-              <div className="w-1/2 text-white">
-                <h2 className="text-3xl font-bold mb-4">{card.heading}</h2>
-                <p className="text-lg">{card.description}</p>
-              </div>
-
-              {/* Right: Image */}
-              <div className="w-1/2">
-                <img
-                  src={card.image}
-                  alt={card.heading}
-                  className="w-full h-auto rounded-2xl object-cover"
-                />
-              </div>
+    <section className="py-20 overflow-hidden bg-white">
+      <div className="w-full space-y-12 relative px-4 sm:px-8">
+        {cardData.map((card, i) => (
+          <div
+            key={i}
+            ref={(el) => {
+              if (el) cardsRef.current[i] = el;
+            }}
+            className="stackCard w-full bg-white rounded-3xl min-h-[600px] px-12 py-16 flex flex-col lg:flex-row items-center justify-between gap-8 shadow-xl"
+          >
+            {/* Left: Text */}
+            <div className="w-full lg:w-1/2 ">
+              <h2 className="text-7xl font-light text-[#0f52ba] mb-4">
+                {card.heading}
+              </h2>
+              <p className="text-xl ">{card.description}</p>
             </div>
-          ))}
-        </div>
-      </section>
 
-      {/* <section className="h-[1000px]"></section> */}
-    </>
+            {/* Right: Image */}
+            <div className="w-full lg:w-1/2">
+              <img
+                src={card.image}
+                alt={card.heading}
+                className="w-full h-auto rounded-2xl object-cover"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 };
